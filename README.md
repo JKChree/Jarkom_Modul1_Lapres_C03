@@ -1,6 +1,8 @@
 # Jarkom_Modul1_Lapres_C03
 
-## Brananda Denta WP - 05111840000143, R. Dafa Berlian Denmar - 05111840000149
+## Brananda Denta WP - 05111840000143
+
+## R. Dafa Berlian Denmar - 05111840000149
 
 ## Outline
 
@@ -26,7 +28,7 @@ Sebutkan webserver yang digunakan pada "testing.mekanis.me"!
 
 ### Langkah Pengerjaan
 
-- Mengetik syntax `http.host contains "testing"` pada kolom filter.
+- Mengetik syntax `http.host contains "testing"` pada kolom display filter.
 - Lalu klik kanan pada yang tertunjuk pertama, lalu pilih follow->tcpstream, lalu akan terlihat webserver yang digunakan
 
 ### Screenshot
@@ -95,48 +97,121 @@ Ikuti perintah di aku.pengen.pw! Username dan password bisa didapatkan dari file
 Seseorang menyimpan file zip melalui FTP dengan nama "Answer.zip". Simpan dan Buka file "Open This.pdf" di Answer.zip. Untuk mendapatkan password zipnya, temukan dalam file zipkey.txt (passwordnya adalah isi dari file txt tersebut).
 
 ### Langkah Pengerjaan
-- 
+- ketik syntax ftp-data pada kolom filter
+- lalu klik kanan pada yang ada answer.zip nya lalu pilih follow->ftp stream
+- lalu ganti Show and save data as nya menjadi Raw
+- lalu klik save dan save sebagai Answer.zip
+- untuk mencari zipkey.txt nya tinggal di cari manual pada kolom info
+- setelah ketemu, klik kanan lalu pilih follow->tcp stream
+- lalu akan tampil password nya
+
+### Screenshot
+![no 6](/img/Picture10.jpg)
+![no 6.1](/img/Picture11.jpg)
+![no 6.2](/img/Picture12.jpg)
+![no 6.3](/img/Picture13.png)
+
+## Soal 7
+
+Ada 500 file zip yang disimpan ke FTP Server dengan nama 1.zip, 2.zip, ..., 500.zip. Salah satunya berisi pdf yang berisi puisi. Simpan dan Buka file pdf tersebut.
+
+### Langkah Pengerjaan
+
+- ketik syntax frame contains "Yes.pdf" pada kolom filter
+- lalu klik kanan pada yang terpilih dan pilih follow->tcp stream
+- lalu ganti Show and save data as nya menjadi Raw dan klik save
+- lalu di save sebagai file Yes.zip
+- setelah itu extrak file zip nya dan buka file Yes.pdf nya
 
 ### Screenshot
 
-### Soal 7
-7. Ada 500 file zip yang disimpan ke FTP Server dengan nama 1.zip, 2.zip, ..., 500.zip. Salah satunya berisi pdf yang berisi puisi. Simpan dan Buka file pdf tersebut.
+![no 7](/img/Picture14.jpg)
+![no 7.1](/img/Picture15.jpg)
+![no 7.2](/img/Picture16.jpg)
+![no 7.3](/img/Picture17.jpg)
+![no 7.4](/img/Picture18.jpg)
+
+## Soal 8
+
+Cari objek apa saja yang didownload (RETR) dari koneksi FTP dengan Microsoft FTP Service!
+
+### Langkah Pengerjaan
+- ketik syntax ftp.request.command == RETR pada kolom filter
+- lalu klik kanan pada yang terpilih lalu ### Screenshot
+
+![no 8](/img/Picture19.jpg)
+![no 8](/img/no%208.png)
+
+## Soal 9
+Cari username dan password ketika login FTP pada localhost!
+
 ### Langkah Pengerjaan
 
-### Soal 8
-8. Cari objek apa saja yang didownload (RETR) dari koneksi FTP dengan Microsoft FTP Service!
-### Langkah Pengerjaan
+### Screenshot
 
-### Soal 9
-9. Cari username dan password ketika login FTP pada localhost!
-### Langkah Pengerjaan
+![no 9](/img/Picture20.jpg)
 
-### Soal 10
-10. Cari file .pdf di wireshark lalu download dan buka file tersebut!
+## Soal 10
+
+Cari file .pdf di wireshark lalu download dan buka file tersebut!
 clue: "25 50 44 46" 
 
 ### Langkah Pengerjaan
 
-### Soal 11
-11. Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
+### Screenshot
+
+![no 10](/img/Picture21.jpg)
+![no 10](/img/Picture22.png)
+![no 10](/img/Picture23.png)
+
+## Soal 11
+
+Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
+
 ### Langkah Pengerjaan
 
-### Soal 12
-12. Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
+### Screenshot
+
+![no 11](/img/Picture24.png)
+
+## Soal 12
+
+Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
+
 ### Langkah Pengerjaan
 
-### Soal 13
-13. Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
+### Screenshot
+
+![no 12](/img/Picture25.jpg)
+![no 12](/img/Picture26.jpg)
+
+## Soal 13
+
+Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
+
 ### Langkah Pengerjaan
 
-### Soal 14
-14. Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
+### Screenshot
+
+![no 13](/img/Picture27.jpg)
+![no 13](/img/Picture28.jpg)
+
+## Soal 14
+
+Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
+
 ### Langkah Pengerjaan
 
-### Soal 15
-15. Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.ac.id!
+### Screenshot
+
+![no 10](/img/Picture29.jpg)
+
+## Soal 15
+
+Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.ac.id!
+
 ### Langkah Pengerjaan
 
+### Screenshot
 
-
-
+![no 10](/img/Picture30.jpg)
