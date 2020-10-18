@@ -137,7 +137,9 @@ Cari objek apa saja yang didownload (RETR) dari koneksi FTP dengan Microsoft FTP
 
 ### Langkah Pengerjaan
 - ketik syntax ftp.request.command == RETR pada kolom filter
-- lalu klik kanan pada yang terpilih lalu ### Screenshot
+- lalu klik kanan pada yang terpilih lalu pilih follow->tcp stream
+
+### Screenshot
 
 ![no 8](/img/Picture19.jpg)
 ![no 8](/img/no%208.png)
