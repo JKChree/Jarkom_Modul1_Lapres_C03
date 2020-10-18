@@ -1,8 +1,7 @@
 # Jarkom_Modul1_Lapres_C03
 
-## Brananda Denta WP - 05111840000143
-
-## R. Dafa Berlian Denmar - 05111840000149
+- Brananda Denta WP - 05111840000143
+- R. Dafa Berlian Denmar - 05111840000149
 
 ## Outline
 
@@ -147,6 +146,7 @@ Cari objek apa saja yang didownload (RETR) dari koneksi FTP dengan Microsoft FTP
 ## Soal 9
 Cari username dan password ketika login FTP pada localhost!
 
+- ketik syntax ftp.request.command == USER || ftp.request.command == PASS pada kolom filter
 ### Langkah Pengerjaan
 
 ### Screenshot
@@ -158,6 +158,11 @@ Cari username dan password ketika login FTP pada localhost!
 Cari file .pdf di wireshark lalu download dan buka file tersebut!
 clue: "25 50 44 46" 
 
+- tekan ctrl + f
+- lalu akan muncul kolom find, ganti display filter menjadi hex value lalu ketik 25 50 44 46 dan klik find
+- lalu klik kanan pada yg terpilih dan pilih follow->tcp stream
+- lalu ganti Show and save data as menjadi Raw dan klik save
+- lalu save sebagai no 10.pdf
 ### Langkah Pengerjaan
 
 ### Screenshot
@@ -172,6 +177,11 @@ Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
 
 ### Langkah Pengerjaan
 
+- Jalankan ftp server pada local computer
+- Login ke ftp dengan mengetikkan `ftp localhost` pada terminal
+- Pilih **Adapter for loopback traffic capture**
+- Masukkan `port 21` pada capture filter lalu tekan Enter
+
 ### Screenshot
 
 ![no 11](/img/Picture24.png)
@@ -181,6 +191,9 @@ Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
 Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
 
 ### Langkah Pengerjaan
+
+- Pilih **Wi-Fi**
+- Masukkan `src port 80` pada capture filter lalu tekan tombol Enter
 
 ### Screenshot
 
@@ -193,6 +206,9 @@ Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
 
 ### Langkah Pengerjaan
 
+- Pilih **Wi-Fi**
+- Masukkan `dst port 443` pada capture filter lalu tekan tombol Enter
+
 ### Screenshot
 
 ![no 13](/img/Picture27.jpg)
@@ -204,6 +220,11 @@ Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
 
 ### Langkah Pengerjaan
 
+- Ketikkan `ipconfig` pada cmd atau `ifconfig` pada terminal linux untuk mengetahui ip komputer kita. Misalnya `192.168.1.67`
+- Buka Wireshark
+- Pilih **Wi-Fi**
+- Masukkan `src host 192.168.1.67` pada capture filter lalu tekan tombol Enter
+
 ### Screenshot
 
 ![no 10](/img/Picture29.jpg)
@@ -214,6 +235,13 @@ Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.a
 
 ### Langkah Pengerjaan
 
+- lakukan Ping ke monta.if.its.ac.id melalui terminal untuk mendapatkan ip dari monta.if.its.ac.id. Didapatkan ipnya 103.94.190.11
+- Buka Wireshark
+- Pilih **Wi-Fi**
+- Masukkan `dst host 103.94.190.11` pada capture filter lalu tekan tombol Enter
+- Kunjungi monta.if.its.ac.id melalui browser hingga muncul paket-paket yang dikirimkan web browser ke monta.if.its.ac.id
+
 ### Screenshot
 
-![no 10](/img/Picture30.jpg)
+![no 10](/img/ping%20monta.png)
+![no 10](/img/last.png)
